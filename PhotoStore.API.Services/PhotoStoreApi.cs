@@ -10,6 +10,10 @@ namespace PhotoStore.API.Services
 
         private readonly PhotoresizerService _resizerService = new PhotoresizerService();
 
+        private Random _randomCookie = new Random();
+
+        private long _uniqueId = 1;
+
         public async Task UploadPhoto(int userId, byte[] photo)
         {
             var uniqueId = GenerateUniqueId();
@@ -29,13 +33,13 @@ namespace PhotoStore.API.Services
 
         private int GenerateRandomCookie()
         {
-            throw new NotImplementedException();
+            return _randomCookie.Next();
         }
 
-        // Should use Guid though...
-        private int GenerateUniqueId()
+        private long GenerateUniqueId()
         {
-            throw new NotImplementedException();
+            // currently just autoincrement it !
+            return _uniqueId++;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace PhotoStore.Server
             _inMemoryIndex.SaveAll(_indexFile.AllIndex);
         }
 
-        public void Store(int uniqueId, int cookie, byte[][] allResizeResult)
+        public void Store(long photoKey, int cookie, byte[][] allResizeResult)
         {
             // for now always assume 4 size (small, thumb, medium and large)
 
@@ -25,9 +25,9 @@ namespace PhotoStore.Server
             for (var i = 0; i < allResizeResult.Length; i++)
             {
                 // should be single thread access per file... ACTOR
-                var index = _haystackService.Write(uniqueId, i, cookie, allResizeResult[0]);
+                var index = _haystackService.Write(photoKey, i, cookie, allResizeResult[0]);
 
-                indexes[0] = index;
+                indexes[i] = index;
             }
 
             _inMemoryIndex.Save(indexes);
