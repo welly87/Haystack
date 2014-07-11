@@ -10,7 +10,7 @@ namespace PhotoStore.API.Services
 
         private readonly PhotoresizerService _resizerService = new PhotoresizerService();
 
-        private Random _randomCookie = new Random();
+        private readonly Random _randomCookie = new Random();
 
         private long _uniqueId = 1;
 
@@ -25,10 +25,9 @@ namespace PhotoStore.API.Services
             _photoStoreService.Store(uniqueId, cookie, allResizeResult);
         }
 
-        public byte[] ReadPhoto()
+        public byte[] ReadPhoto(int photoKey, ImageSize size, int cookie)
         {
-            //return _photoStoreService.Load()
-            return null;
+            return _photoStoreService.Load(1, photoKey, ImageSize.Large, cookie);
         }
 
         private int GenerateRandomCookie()

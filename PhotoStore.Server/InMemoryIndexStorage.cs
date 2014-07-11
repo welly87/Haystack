@@ -7,7 +7,7 @@ namespace PhotoStore.Server
     public class InMemoryIndexStorage
     {
         // create map to store 
-
+        // need to change this with Google Hashtable
         readonly IDictionary<long, InMemoryIndex> _inMemoryIndices = new Dictionary<long, InMemoryIndex>();
 
         public void SaveAll(IEnumerable<NeedleIndex> allIndex)
