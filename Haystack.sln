@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.API.Services", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haystack.Specs", "Haystack.Specs\Haystack.Specs.csproj", "{6C00020C-1F99-4999-96CE-4E110DA27E39}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{151B6DC9-CCE3-477A-9181-2DEB40D446C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{7D397764-C36B-4A6A-BACF-5195FCA0D8C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CB10B2A-4C47-4775-8628-2D69BA17C8F5} = {151B6DC9-CCE3-477A-9181-2DEB40D446C1}
+		{A8E0912D-C14D-4FA0-B928-22F6B8BFB013} = {151B6DC9-CCE3-477A-9181-2DEB40D446C1}
+		{413C5FD2-994C-4029-9FCF-99840D453EBB} = {151B6DC9-CCE3-477A-9181-2DEB40D446C1}
+		{6C00020C-1F99-4999-96CE-4E110DA27E39} = {7D397764-C36B-4A6A-BACF-5195FCA0D8C2}
 	EndGlobalSection
 EndGlobal
