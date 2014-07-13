@@ -5,23 +5,21 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Haystack.ObjectStore")]
+[assembly: AssemblyTitle("Haystack.Specs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Haystack.ObjectStore")]
+[assembly: AssemblyProduct("Haystack.Specs")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("Haystack.Specs")]
-
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2236fcda-c177-4d80-b54b-6291fe949d92")]
+[assembly: Guid("aa6639a9-5272-4076-9b8e-492ba4e79645")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.Server", "PhotoS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStore.API.Services", "PhotoStore.API.Services\PhotoStore.API.Services.csproj", "{413C5FD2-994C-4029-9FCF-99840D453EBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haystack.Specs", "Haystack.Specs\Haystack.Specs.csproj", "{6C00020C-1F99-4999-96CE-4E110DA27E39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{413C5FD2-994C-4029-9FCF-99840D453EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{413C5FD2-994C-4029-9FCF-99840D453EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{413C5FD2-994C-4029-9FCF-99840D453EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C00020C-1F99-4999-96CE-4E110DA27E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C00020C-1F99-4999-96CE-4E110DA27E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C00020C-1F99-4999-96CE-4E110DA27E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C00020C-1F99-4999-96CE-4E110DA27E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

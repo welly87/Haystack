@@ -6,11 +6,11 @@ namespace Haystack.ObjectStore
     {
         private readonly IHaystackIndexFile _indexFile = new HaystackIndexFile();
 
-        private readonly IHaystackStoreFile _storeFile = new HayStackStoreFile();
+        private readonly IHaystackStoreFile _storeFile = new HayStackStoreFile("photos.bin");
 
-        private int _headerSize;
-        
-        private int _footerSize;
+        private const int HeaderSize = 5*4 + 8;
+
+        private const int FooterSize = 3*4;
 
         public NeedleIndex Write(long key, int alternateKey, int cookie, byte[] data)
         {
@@ -46,12 +46,14 @@ namespace Haystack.ObjectStore
 
         private int Checksum(byte[] data)
         {
-            throw new NotImplementedException();
+
+            // TODO change checksum
+            return 0; 
         }
 
         public byte[] Read(long key, int alternateKey, int cookie, int offset, int dataSize)
         {
-            var needleSize = _headerSize + dataSize + _footerSize;
+            var needleSize = HeaderSize + dataSize + FooterSize;
 
             var needle = _storeFile.Read(offset, needleSize);
 
