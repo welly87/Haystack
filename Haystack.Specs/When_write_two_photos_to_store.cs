@@ -45,6 +45,8 @@ namespace Haystack.Specs
             File.WriteAllBytes(Path.Combine(TargetDir, Image1), needl1.Data);
                                             
             File.WriteAllBytes(Path.Combine(TargetDir, Image2), needl2.Data);
+
+            anotherStoreFile.Close();
         }
 
         private ImageInfo SaveImage(HayStackStoreFile storeFile, string image)

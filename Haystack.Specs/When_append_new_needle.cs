@@ -43,6 +43,8 @@ namespace Haystack.Specs
             Assert.AreEqual(tobesaved.FooterMagicNumber, needle.FooterMagicNumber);
             Assert.AreEqual(tobesaved.HeaderMagicNumber, needle.HeaderMagicNumber);
             Assert.AreEqual(tobesaved.Padding, needle.Padding);
+
+            storeFile.Close();
         }
     }
 }
