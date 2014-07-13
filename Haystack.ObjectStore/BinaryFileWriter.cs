@@ -7,7 +7,7 @@ namespace Haystack.ObjectStore
     // TODO check how event store, kafka working
 
     // TODO should create async IO
-    internal class BinaryFileWriter : IBinaryWriter
+    internal class BinaryFileWriter : IFileBinaryWriter
     {
         private readonly BinaryWriter _writer;
         public BinaryFileWriter(string photosBin)

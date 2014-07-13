@@ -43,8 +43,8 @@
     <Compile Include="HaystackIndexFile.cs" />
     <Compile Include="HayStackStoreFile.cs" />
     <Compile Include="HaystackStoreService.cs" />
-    <Compile Include="IBinaryReader.cs" />
-    <Compile Include="IBinaryWriter.cs" />
+    <Compile Include="IFileBinaryReader.cs" />
+    <Compile Include="IFileBinaryWriter.cs" />
     <Compile Include="IHaystackIndexFile.cs" />
     <Compile Include="IHaystackStoreFile.cs" />
     <Compile Include="IHaystackStoreService.cs" />

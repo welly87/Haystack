@@ -5,11 +5,11 @@
     {
         // TODO should more than one file for store file
 
-        // TODO should separate writer and reader. For thread acess convineient
-        private readonly IBinaryWriter _writer;
+        // TODO should separate writer and reader. For thread safety convenience
+        private readonly IFileBinaryWriter _writer;
 
         // TODO reader should be independent of writer should not be shared
-        private readonly IBinaryReader _reader;
+        private readonly IFileBinaryReader _reader;
 
         public HayStackStoreFile(string photosBin)
         {

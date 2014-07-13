@@ -3,7 +3,7 @@
 namespace Haystack.ObjectStore
 {
     // TODO should be async IO
-    internal class BinaryFileReader : IBinaryReader
+    internal class BinaryFileReader : IFileBinaryReader
     {
         private readonly BinaryReader _reader;
 

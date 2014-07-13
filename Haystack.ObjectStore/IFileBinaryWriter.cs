@@ -1,6 +1,6 @@
 ﻿namespace Haystack.ObjectStore
 {
-    internal interface IBinaryWriter
+    internal interface IFileBinaryWriter
     {
         void Write(int i);
         void Write(long i);

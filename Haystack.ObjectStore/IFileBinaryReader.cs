@@ -2,7 +2,7 @@
 {
 
     // TODO this one should be stateless ? or single actor ?? 
-    internal interface IBinaryReader
+    internal interface IFileBinaryReader
     {
         void Seek(int offset);
         int ReadInt();
