@@ -9,7 +9,7 @@ namespace Haystack.ObjectStore
 
         public BinaryFileReader(string photosBin)
         {
-            _reader = new BinaryReader(new FileStream("photos.bin", FileMode.Open, FileAccess.Read, FileShare.ReadWrite));
+            _reader = new BinaryReader(new FileStream(photosBin, FileMode.Open, FileAccess.Read, FileShare.ReadWrite));
         }
 
         public void Seek(int offset)

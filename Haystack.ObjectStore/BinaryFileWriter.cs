@@ -16,7 +16,7 @@ namespace Haystack.ObjectStore
 
             // if file not exist then create a new file
 
-            _writer = new BinaryWriter(new FileStream("photos.bin", FileMode.Append, FileAccess.Write, FileShare.Read));
+            _writer = new BinaryWriter(new FileStream(photosBin, FileMode.Append, FileAccess.Write, FileShare.Read));
 
             EnsureSuperBlockExists();
         }
